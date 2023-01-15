@@ -1,0 +1,14 @@
+query getDataByField($field: Field, $value: String) {
+  getDataByField(field: $field, value: $value) @client {
+    permalink
+    company
+    numEmps
+    category
+    city
+    state
+    fundedDate
+    raisedAmt
+    raisedCurrency
+    round
+  }
+}

@@ -1,0 +1,14 @@
+query getAllData {
+  getAllData @client {
+    permalink
+    company
+    numEmps
+    category
+    city
+    state
+    fundedDate
+    raisedAmt
+    raisedCurrency
+    round
+  }
+}

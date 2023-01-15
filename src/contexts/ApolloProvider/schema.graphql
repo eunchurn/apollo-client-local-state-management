@@ -1,0 +1,30 @@
+type Data {
+  permalink: String
+  company: String
+  numEmps: String
+  category: String
+  city: String
+  state: String
+  fundedDate: String
+  raisedAmt: String
+  raisedCurrency: String
+  round: String
+}
+
+enum Field {
+  permalink
+  company
+  numEmps
+  category
+  city
+  state
+  fundedDate
+  raisedAmt
+  raisedCurrency
+  round
+}
+
+type Query {
+  getAllData: [Data]
+  getDataByField(field: Field, value: String): [Data]
+}
